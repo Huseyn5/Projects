@@ -1,0 +1,46 @@
+﻿<Window x:Class="Project.Sign_up"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="Sign_up" Height="300" Width="350">
+    <Grid Background="#FF009FE2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Username" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right"/>
+        <Label Content="Password" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right"/>
+        <Label Content="RePassword" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right"/>
+        <Label Content="Name" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right"/>
+        <Label Content="Surname" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="UserNameBox" Grid.Column="1" Grid.Row="1" Margin="5" />
+        <PasswordBox Grid.Column="1" Grid.Row="2" Margin="5" PasswordChar="*" x:Name="Password"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Margin="5" x:Name="PasswordTextBox" Visibility="Collapsed"/>
+        <PasswordBox Grid.Column="1" Grid.Row="3" Margin="5" PasswordChar="*" x:Name="RePassword"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Margin="5" x:Name="RePasswordTextBox" Visibility="Collapsed"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Margin="5" x:Name="NameBox"/>
+        <TextBox Grid.Column="1" Grid.Row="5" Margin="5" x:Name="SurnameBox"/>
+        <Button Content="Submit" Grid.Column="1" Grid.Row="6" VerticalAlignment="Bottom"
+                HorizontalAlignment="Right" Width="50" Height="20" Margin="5"
+                Foreground="White" Background="#FF353535" Click="Button_Click"/>
+        <Button Grid.Column="2" Grid.Row="2" Content="👁" Margin="5" HorizontalAlignment="Left" Click="Password_Show"
+                Background="#FF009FE2"/>
+        <Button Grid.Column="2" Grid.Row="3" Content="👁" Margin="5" HorizontalAlignment="Left" Click="RePassword_Show"
+                Background="#FF009FE2"/>
+
+    </Grid> 
+</Window>
